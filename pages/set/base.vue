@@ -1,9 +1,5 @@
 <template>
   <section class="container">
-    <div>
-      基础设置
-      {{data}}
-    </div>
     <el-form :model="data" status-icon :rules="ruleForm" ref="data" label-width="100px" class="demo-ruleForm">
       <el-form-item label="标题" prop="title">
         <el-input v-model="data.title" auto-complete="off"></el-input>
@@ -82,6 +78,6 @@
 <style lang="scss" scoped>
   .el-form{
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 </style>
