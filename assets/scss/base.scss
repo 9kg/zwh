@@ -1,0 +1,77 @@
+@import "var/common";
+
+html,body,#__nuxt,#__layout{
+  height: 100%;
+}
+
+body {
+    background: $bgc-base;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    color: $c-text-main;
+    font-family: PingFang SC,Helvetica Neue,Hiragino Sans GB,Helvetica,Microsoft YaHei,Arial,SimSun,sans-serif;
+}
+
+// 滚动条样式自定义
+$croll-size: 5px;
+$croll-c-container: $c-main;
+$scroll-c-content: rgba(invert($croll-c-container, 20%), 0.8);
+:focus{
+  outline: none;
+}
+::-webkit-scrollbar{
+    height: $croll-size;
+    width: $croll-size;
+    background: mix($c-white, $croll-c-container, 90%);
+    transition: all 0.3s ease-in-out;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px lighten($croll-c-container, 15%);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: $croll-size;
+    background: $scroll-c-content; 
+}
+::-webkit-scrollbar-thumb:hover{
+    background: darken($scroll-c-content, 10%);
+}
+::-webkit-scrollbar-thumb:active{
+    background: darken($scroll-c-content, 25%);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: lighten($scroll-c-content, 15%);
+}
+
+// 正常页面切换动画
+.page-enter-active{
+  animation:page-in 0.3s;
+}
+.page-leave-active{
+  animation:page-in 0.3s reverse;
+}
+@keyframes page-in{
+  0%{transform:scale(.9);opacity: 0.3;}
+  100%{transform:scale(1);opacity: 1;}
+}
+
+// 左右切换页面动画
+.slide-left-enter-active{
+  animation: slide-left-in .3s;
+}
+.slide-left-leave-active{
+  animation: slide-right-in .3s reverse;
+}
+.slide-right-enter-active{
+  animation: slide-right-in .3s;
+}
+.slide-right-leave-active{
+  animation: slide-left-in .3s reverse;
+}
+@keyframes slide-left-in{
+  0%{transform:translateX(-50%); opacity: 0.3;}
+  100%{transform:translateX(0); opacity: 1;}
+}
+@keyframes slide-right-in{
+  0%{transform:translateX(50%); opacity: 0.3;}
+  100%{transform:translateX(0); opacity: 1;}
+}

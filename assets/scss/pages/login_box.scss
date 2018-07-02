@@ -1,0 +1,87 @@
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /deep/ .el-input__inner{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding-left: 0;
+  }
+  // /deep/ .el-input-group__prepend{
+  //   border-top: none;
+  //   border-left: none;
+  //   border-right: none;
+  //   border-radius: 0;
+  //   background: none;
+  //   padding-left: 0;
+  // }
+  .el-form-item{
+    position: relative;
+  }
+  .img_code,.send_sms{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: 10px;
+  }
+  .img_code{
+    cursor: pointer;
+    // 图片大小建议后台控制
+    // width: 100px;
+    // height: 26px;
+  }
+}
+  
+.title{
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: normal;
+  user-select: none;
+}
+.hack2dealautocomplete{
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  top: -999px;
+  left: -999px;
+}
+.oper_area,.submit_area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.oper_area{
+  margin-bottom: 35px;
+  /deep/ .el-checkbox__input.is-checked+.el-checkbox__label{
+    color: $c-text-secondary;
+  }
+  a{
+    color: $c-text-secondary;        
+    text-decoration: none;
+    &:hover{
+      color: $c-main;
+    }
+    &:active{
+      color: darken($c-main, 10%);
+    }
+  }
+}
+.submit_area{
+  .el-button{
+    width: 136px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+    font-size: 14px;
+  }
+}
+.el-form-item--small.el-form-item{
+  margin: 5px 0 30px 0;
+  padding-top: 6px;
+}

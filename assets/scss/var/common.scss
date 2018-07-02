@@ -1,0 +1,99 @@
+/**
+ * bg: background
+ * bgc: background-color
+ * c: color
+ */
+
+// 主题色
+// $c-theme: #32325d;
+$c-theme: #444;
+// 页面头部高度
+$page-header-height: 50px;
+// 页面菜单宽度
+$page-menu-width: 200px;
+// 页面菜单宽度-折叠时
+$page-menu-collapse-width: 60px;
+
+// 以下变量同时影响element主题样式，只读勿改
+/* Colors
+-------------------------- */
+$c-white: #fff !default;
+$c-black: #000 !default;
+
+// $c-main: #333 !default;
+$c-main: #409EFF !default;
+
+$c-success: #67c23a !default;
+$c-warning: #e6a23c !default;
+$c-danger: #f56c6c !default;
+$c-info: #909399 !default;
+
+$c-text-main: #262626 !default;
+$c-text-regular: #595959 !default;
+$c-text-secondary: #8c8c8c !default;
+$c-text-placeholder: #bfbfbf !default;
+$c-text-revert: #f9fafc !default;
+
+/* Link
+-------------------------- */
+$link-c: mix($c-white, $c-main, 20%) !default;
+$link-hover-c: $c-main !default;
+
+/* Background
+-------------------------- */
+$bgc-base: #f6f9fc !default;
+
+/* Border
+-------------------------- */
+$border-width-base: 1px !default;
+$border-style-base: solid !default;
+$border-c-base: #dcdfe6 !default;
+$border-c-light: #e4e7ed !default;
+$border-c-lighter: #ebeef5 !default;
+$border-c-extra-light: #f2f6fc !default;
+$border-c-hover: $c-text-placeholder !default;
+$border-base: $border-width-base $border-style-base $border-c-base !default;
+$border-radius-base: 4px !default;
+$border-radius-small: 2px !default;
+$border-radius-circle: 100% !default;
+
+/* Box-shadow
+-------------------------- */
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
+$box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) !default;
+$box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+
+/* Fill
+-------------------------- */
+$fill-base: $c-white !default;
+
+/* Font
+-------------------------- */
+$font-path: 'fonts' !default;
+$font-size-base: 14px !default;
+$font-size-small: 13px !default;
+$font-size-large: 18px !default;
+$font-c-disabled-base: #bbb !default;
+$font-weight-main: 500 !default;
+$font-line-height-main: 24px !default;
+
+/* Size
+-------------------------- */
+$size-base: 14px !default;
+
+/* z-index
+-------------------------- */
+$index-normal: 1 !default;
+$index-top: 1000 !default;
+$index-popper: 2000 !default;
+
+/* Disable base
+-------------------------- */
+$disabled-fill-base: $bgc-base !default;
+$disabled-c-base: $c-text-placeholder !default;
+$disabled-border-base: $border-c-light !default;
+
+/* Icon
+-------------------------- */
+$icon-c: #666 !default;
+$icon-c-base: $c-info !default;

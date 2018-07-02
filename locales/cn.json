@@ -1,0 +1,27 @@
+{
+  "demo": {
+    "publicTest": "公共测试"
+  },
+  "common": {
+    "en": "英文",
+    "cn": "中文",
+    "all": "所有"
+  },
+  "links": {
+    "home": "首页",
+    "about": "关于",
+    "english": "英文",
+    "chinese": "中文"
+  },
+  "home": {
+    "title": "欢迎",
+    "introduction": "这是一段中文介绍"
+  },
+  "about": {
+    "title": "关于",
+    "introduction": "这是一个给你更多介绍的页面"
+  },
+  "metadata":{
+
+  }
+}

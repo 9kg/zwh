@@ -1,0 +1,23 @@
+{
+  "demo": {
+    "publicTest": "public test"
+  },
+  "common": {
+    "en": "English",
+    "cn": "Chinese"
+  },
+  "links": {
+    "home": "Home",
+    "about": "About",
+    "english": "English",
+    "chinese": "Chinese"
+  },
+  "home": {
+    "title": "Welcome",
+    "introduction": "This is an introduction in English."
+  },
+  "about": {
+    "title": "About",
+    "introduction": "This page is made to give you more informations."
+  }
+}
