@@ -7,8 +7,8 @@
       <el-form-item label="描述" prop="desc">
         <el-input v-model="data.desc" auto-complete="off"></el-input>
       </el-form-item>
-      <el-form-item label="年龄" prop="age">
-        <el-input v-model.number="data.age"></el-input>
+      <el-form-item label="copyright" prop="copyright">
+        <el-input v-model.number="data.copyright"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm('data')">提交</el-button>
@@ -27,32 +27,16 @@
       }
     },
     data() {
-      var checkAge = (rule, value, callback) => {
-        if (!value) {
-          return callback(new Error('年龄不能为空'));
-        }
-        setTimeout(() => {
-          if (!Number.isInteger(value)) {
-            callback(new Error('请输入数字值'));
-          } else {
-            if (value < 18) {
-              callback(new Error('必须年满18岁'));
-            } else {
-              callback();
-            }
-          }
-        }, 1000);
-      };
       return {
         ruleForm: {
-          age: [
-            { validator: checkAge, trigger: 'blur' }
+          copyright: [
+            { required: true, trigger: 'blur' }
           ]
         }
       };
     },
     methods: {
-      async submitForm(formName) {
+      submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
             this.$axios.$post('mock/set/setBase', {data: this.data}).then(data => {
