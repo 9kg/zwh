@@ -8,23 +8,21 @@ module.exports = ({arg1, arg2}) => {
         text: '模块设置',
         link: '/set/module',
         icon: 'my-icon-group'
-    // }, {
-    //     text: '图标',
-    //     link: '/common/icons',
-    //     icon: 'my-icon-fonticons'
-    // }, {
-    //     text: '其它demo',
-    //     icon: 'el-icon-more',
-    //     link: '/demo',
-    //     children: [{
-    //         text: '首页',
-    //         link: ''
-    //     }, {
-    //         text: '试炼场',
-    //         link: '/test'
-    //     }, {
-    //         text: 'vuex',
-    //         link: '/vuex'
-    //     }]
+    }, {
+        text: 'ico设置',
+        link: '/set/ico',
+        icon: 'my-icon-fire'
+    }, {
+        text: 'logo设置',
+        link: '/set/logo',
+        icon: 'my-icon-flag'
+    }, {
+        text: '背景图设置',
+        link: '/set/bg',
+        icon: 'el-icon-picture'
+    }, {
+        text: 'banner图设置',
+        link: '/set/banner',
+        icon: 'my-icon-file-image-o'
     }];
 }

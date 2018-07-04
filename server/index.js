@@ -38,6 +38,7 @@ if (!isDev) {
 // require('../_old_hrssc/app')(app);
 
 // app.use(require('./auth'));
+app.use('/upload', require('./upload'));
 
 async function start() {
   // Init Nuxt.js
