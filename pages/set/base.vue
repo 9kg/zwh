@@ -29,8 +29,11 @@
     data() {
       return {
         ruleForm: {
+          title: [
+            { required: true, message: '标题不能为空', trigger: 'blur' }
+          ],
           copyright: [
-            { required: true, trigger: 'blur' }
+            { required: true, message: 'copyright不能为空', trigger: 'blur' }
           ]
         }
       };
